@@ -85,7 +85,7 @@ class MotorConfigGenerator:
             ric_path, csv_path = self.generate_motor_config(i)
             
             # Run simulation using CLI
-            cmd = ["python", "main.py", ric_path, "-o", csv_path]
+            cmd = ["python", "run-sim.py", ric_path, "-o", csv_path]
             try:
                 subprocess.run(cmd, check=True)
                 print(f"Successfully simulated motor {i+1}")

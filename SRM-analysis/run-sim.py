@@ -1,8 +1,10 @@
 import sys
 import argparse
+
 from motorlib.motor import Motor
 from motorlib.units import convert
 import json
+from motorlib.simResult import SimAlertLevel
 
 def run_motor_simulation(input_file, output_file=None):
     """
